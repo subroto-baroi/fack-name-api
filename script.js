@@ -28,8 +28,8 @@ function getAll(data){
     const married= `${details.registered.age}`
     const getMarried=document.getElementById('married');
     const marriageDate= `${details.registered.date}`;
-    const exatMarriageDate=marriageDate.slice(0, marriageDate.length - 14)
-    const getMarriageDate=document.getElementById('marriageDate');
+    const exatmarrigeDate=marriageDate.slice(0, marriageDate.length - 14)
+    const getMarrigeDate=document.getElementById('marrigeDate');
     
     document.getElementById('name').innerText=fullName;
     document.getElementById('email').innerText=details.email;
@@ -46,11 +46,14 @@ function getAll(data){
     
     if(marrid=>1){
       getMarried.innerText= `${married} Years Married`
-      getMarriageDate.innerText=exatMarrigeDate;
+      getMarrigeDate.innerText=exatmarrigeDate;
     }
     else{
-      getMarried.innerText= "Unmarried"
-      getMarriageDate.style.display='none'
+      getMarried.innerText= "Unmarrid"
+      getMarrigeDate.style.display='none'
     }
 
 }
+// setInterval(() => {
+//   details();
+// }, 1000);
